@@ -14,7 +14,7 @@ class Post(models.Model):
     publish = models.DateTimeField(default=timezone.now)
     created = models.DateTimeField(auto_now_add=True)
     update = models.DateTimeField(auto_now=True)
-    status = models.CharField(max_length=10,choices = STATUS_CHOICES,default='draft')
+    status = models.CharField(max_length=10,choices = STATUS_CHOICES,default='draf')
 
     class Meta:
         ordering = ('-publish',)
